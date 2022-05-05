@@ -1,8 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    float r;
-    scanf("%f",&r);
-    printf("%.2f",3.14*r*r);
+    int r;
+    float z;
+    scanf("%d",&r);
+    z=3.14*r*r;
+    printf("%.2f",z);
     return 0;
 }
