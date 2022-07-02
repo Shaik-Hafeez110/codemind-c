@@ -3,9 +3,10 @@ int self(int n)
 {
     int i,j;
     j=n;
-    while(j){
+    while(j)
+    {
         i=j%10;
-        if(i==0) 
+        if(i==0)
         return 0;
         if(n%i!=0)
         return 0;
@@ -23,4 +24,4 @@ int main()
         printf("%d ",i);
     }
     return 0;
-}    
+}
