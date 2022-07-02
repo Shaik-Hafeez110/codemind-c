@@ -1,21 +1,17 @@
 #include<stdio.h>
-int x(int);
 int main()
 {
-    int n,i,z;
+    int i,j,n;
     scanf("%d",&n);
-    for(i=1;i<=n;i++)
+    int a=0,b=0,c=1;
+    printf("0 1 ");
+    scanf("%d",&i);
+    for(i=0;i<n-2;i++)
     {
-        z=x(i);
-        printf("%d ",z);
+        a=b+c;
+        b=c;
+        c=a;
+        printf("%d ",a);
     }
-}
-int x(int n)
-{
-    if(n==1)
-       return 0;
-    else if(n==2)
-        return 1;
-    else
-        return x(n-1)+x(n-2);
-}
+    return 0;
+}    
