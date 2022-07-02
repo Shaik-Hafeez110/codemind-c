@@ -8,7 +8,6 @@ void happy(int n)
         printf("True");
         return ;
     }    
-    // if(n==4||n==5||n==2||n==3||n==6||n==8||n==9)
     if(n==4)
     {
         printf("False");
