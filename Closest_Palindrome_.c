@@ -1,42 +1,47 @@
 #include<stdio.h>
 #include<math.h>
-int pd(int n)
+int palindrome(int);
+int palindrome(int a)
 {
-    int d=0,i,a;
-    a=n;
-    while(n)
+    int d,re=0,s=a;
+    while(a)
     {
-        i=n%10;
-        d=d*10+i;
-        n/=10;
+        d=a%10;
+        re=re*10+d;
+        a/=10;
     }
-    if(d==a)
+    if(re==s)
     return 1;
     else
     return 0;
 }
 int main()
 {
-    int a,b,n;
-    scanf("%d",&n);
-    a=n+1;
-    b=n-1;
-    while(1)
+    int a,i,j,c=0,s,k;
+    scanf("%d",&a);
+    for(i=1;i<a;i++)
     {
-        if (pd(a)==1)
-        break;
-        a++;
+        if(palindrome(i))
+            s=i;
     }
-    while(1)
-    {
-        if (pd(b)==1)
-        break;
-        b--;
-    }
-    if(abs(b-n)==abs(a-n))
-    printf("%d %d",b,a);
-    else if(abs(b-n)>abs(a-n))
-    printf("%d",a);
-    else
-    printf("%d",b);
+   i=a+1;
+   while(1)
+   {
+       if(palindrome(i))
+       {
+           k=i;
+           break;
+       }
+       i+=1;
+   }
+   int x,y,ans;
+  x=abs(a-s);
+  y=abs(a-k);
+  if(x==y)
+      printf("%d %d",s,k);
+   else
+   {
+  ans=(x<y)?s:k;
+  printf("%d",ans);
+   }
 }
