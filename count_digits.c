@@ -26,6 +26,4 @@ int main()
        c=digit(a[i]);
        printf("%d ",c);
    }
-
-   
 }
