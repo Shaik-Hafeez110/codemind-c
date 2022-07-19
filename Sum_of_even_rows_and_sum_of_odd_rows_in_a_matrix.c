@@ -28,6 +28,3 @@ int main()
     printf("%d %d",sum,diff);
     
 }
-
-
-
