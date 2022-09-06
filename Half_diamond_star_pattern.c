@@ -15,8 +15,7 @@ for(int i=1;i<=n;i++)
     printf("*");
    
   }  
-  printf("
-");  
+  printf("\n");  
 }
 }
  else
@@ -32,8 +31,7 @@ for(int i=1;i<=n;i++)
     printf("*");
 
    }  
-   printf("
-");  
+   printf("\n");  
  }
      }
      
