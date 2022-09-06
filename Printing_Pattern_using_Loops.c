@@ -3,7 +3,7 @@
 int main()
 {
     int i, j, n;
-    printf("");
+    // printf("");
     scanf("%d",&n);
     
     for(i=n; i>1; i--)
@@ -18,8 +18,7 @@ int main()
             if(j>i) printf("%d ", j);
             else printf("%d ", i);
         }
-        printf("
-");
+        printf("\n");
     }    
     for(i=1; i<=n; i++)
     {
@@ -33,8 +32,7 @@ int main()
             if(j>i) printf("%d ", j);
             else printf("%d ", i);
         }
-        printf("
-");
+        printf("\n");
     }
     
     return 0;
